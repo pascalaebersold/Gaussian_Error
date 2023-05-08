@@ -1,7 +1,6 @@
 import math
 from uncertainties import ufloat
 from uncertainties.umath import *
-from sympy import *
 import tkinter as tk
 
 def calc():
@@ -96,8 +95,6 @@ e12.insert(10, "0.5")
 
 e13.insert(10, "(a*b*pow(1+pow((c*d)/(e*f),2),1/2))/((c*d)/(e*f))")
 
-
-#tk.Button(master, text='Quit', command=master.quit).grid(row=6, column=0, sticky=tk.W, pady=4)
 tk.Button(master, text='Calc', command=calc).grid(row=8, column=1, sticky=tk.W, pady=4)
 tk.Button(master, text='Clear', command=clear).grid(row=8, column=0, sticky=tk.W, pady=4)
 
