@@ -11,8 +11,6 @@ def calc():
     if e5.get(): e = ufloat(e5.get(), float(e11.get()))
     if e6.get(): f = ufloat(e6.get(), float(e12.get()))
     solution["text"] = '{:.3u}'.format(eval(e13.get()))
-    a,b,c,d,e,f = symbols('a b c d e f')
-    pprint(e13.get())
 
 def clear():
     e1.delete(0, tk.END)
